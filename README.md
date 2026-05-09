@@ -1,4 +1,4 @@
-# Memorable Moments
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/7e303785-ceb3-46fe-a349-e5eb3f3253b1" /># Memorable Moments
 
 一个基于微信小程序与微信云开发实现的「重要日子记录与提醒」应用。
 
@@ -94,7 +94,8 @@ events 集合
 
 # Reminder 流程
 
-![Uploading image.png…]()
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f1356d94-e6e2-4407-92a2-cbc65929b150" />
+
 
 ---
 
