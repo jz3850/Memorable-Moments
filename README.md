@@ -10,7 +10,7 @@
 
 # UI演示
 
-<img width="586" height="1204" alt="image" src="https://github.com/user-attachments/assets/f04360f5-9bcb-4d50-bfbe-8e9f3918fa99" />
+<img width="293" height="602" alt="image" src="https://github.com/user-attachments/assets/f04360f5-9bcb-4d50-bfbe-8e9f3918fa99" />
 
 ---
 
