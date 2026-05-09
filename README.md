@@ -1,4 +1,4 @@
-# Memorable Moments
+<img width="470" height="958" alt="image" src="https://github.com/user-attachments/assets/6e4c5e3a-f986-4306-9a39-9e2783eaa1cf" /># Memorable Moments
 
 一个基于微信小程序与微信云开发实现的「重要日子记录与提醒」应用。
 
@@ -9,6 +9,9 @@
 * 阳历 / 农历
 * 微信订阅消息提醒
 * 云数据库同步
+
+# UI演示
+<img width="470" height="958" alt="image" src="https://github.com/user-attachments/assets/10b93d23-5f30-466c-8272-40935f30b7eb" />
 
 ---
 
