@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/add/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "Memorable Moments"
+  }
+}

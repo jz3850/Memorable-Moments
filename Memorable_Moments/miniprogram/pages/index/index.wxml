@@ -1,0 +1,165 @@
+<view class="page">
+  <view class="header">
+    <view class="title">Memorable Moments</view>
+    <view class="subtitle">记录重要日子，不错过每一次祝福</view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">事务</view>
+
+    <view wx:if="{{taskList.length === 0}}" class="empty-text">
+      ✅ 暂无事务，点击下方按钮添加
+    </view>
+
+    <view
+      class="card"
+      wx:for="{{taskList}}"
+      wx:key="index"
+      bindtap="onUserEventTap"
+      data-type="task"
+      data-index="{{index}}"
+    >
+      <view class="event-top">
+        <view class="event-name">{{item.name}}</view>
+        <view wx:if="{{item.reminderEnabled}}" class="reminder-tag">已提醒</view>
+      </view>
+
+      <view class="event-date">
+        {{item.displayDate}} · {{item.calendarType}}
+        <text wx:if="{{item.lunarText}}"> · {{item.lunarText}}</text>
+      </view>
+
+      <view class="event-countdown {{item.countdownClass}}">
+        还有 {{item.countdown}} 天
+      </view>
+    </view>
+
+    <button class="add-btn" bindtap="goAddPage" data-type="task">
+      + 添加事务
+    </button>
+  </view>
+
+  <view class="section">
+    <view class="section-title">生日</view>
+
+    <view wx:if="{{birthdayList.length === 0}}" class="empty-text">
+      🎂 暂无生日，点击下方按钮添加
+    </view>
+
+    <view
+      class="card"
+      wx:for="{{birthdayList}}"
+      wx:key="index"
+      bindtap="onUserEventTap"
+      data-type="birthday"
+      data-index="{{index}}"
+    >
+      <view class="event-top">
+        <view class="event-name">{{item.name}}</view>
+        <view wx:if="{{item.reminderEnabled}}" class="reminder-tag">已提醒</view>
+      </view>
+
+      <view class="event-date">
+        {{item.displayDate}} · {{item.calendarType}}
+        <text wx:if="{{item.lunarText}}"> · {{item.lunarText}}</text>
+      </view>
+
+      <view class="event-countdown {{item.countdownClass}}">
+        还有 {{item.countdown}} 天
+      </view>
+    </view>
+
+    <button class="add-btn" bindtap="goAddPage" data-type="birthday">
+      + 添加生日
+    </button>
+  </view>
+
+  <view class="section">
+    <view class="section-title">纪念日</view>
+
+    <view wx:if="{{anniversaryList.length === 0}}" class="empty-text">
+      💌 暂无纪念日，点击下方按钮添加
+    </view>
+
+    <view
+      class="card"
+      wx:for="{{anniversaryList}}"
+      wx:key="index"
+      bindtap="onUserEventTap"
+      data-type="anniversary"
+      data-index="{{index}}"
+    >
+      <view class="event-top">
+        <view class="event-name">{{item.name}}</view>
+        <view wx:if="{{item.reminderEnabled}}" class="reminder-tag">已提醒</view>
+      </view>
+
+      <view class="event-date">
+        {{item.displayDate}} · {{item.calendarType}}
+        <text wx:if="{{item.lunarText}}"> · {{item.lunarText}}</text>
+      </view>
+
+      <view class="event-countdown {{item.countdownClass}}">
+        还有 {{item.countdown}} 天
+      </view>
+    </view>
+
+    <button class="add-btn" bindtap="goAddPage" data-type="anniversary">
+      + 添加纪念日
+    </button>
+  </view>
+
+  <view class="section">
+    <view class="section-title">节日</view>
+
+    <view
+      class="card"
+      wx:for="{{festivalList}}"
+      wx:key="name"
+      bindtap="onSystemEventTap"
+      data-type="festival"
+      data-index="{{index}}"
+    >
+      <view class="event-top">
+        <view class="event-name">{{item.name}}</view>
+        <view wx:if="{{item.reminderEnabled}}" class="reminder-tag">已提醒</view>
+      </view>
+
+      <view class="event-date">
+        {{item.displayDate}}
+        <text wx:if="{{item.lunarText}}"> · {{item.lunarText}}</text>
+      </view>
+
+      <view class="event-countdown {{item.countdownClass}}">
+        还有 {{item.countdown}} 天
+      </view>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="section-title">节假日</view>
+
+    <view
+      class="card"
+      wx:for="{{holidayList}}"
+      wx:key="name"
+      bindtap="onSystemEventTap"
+      data-type="holiday"
+      data-index="{{index}}"
+    >
+      <view class="event-top">
+        <view class="event-name">{{item.name}}</view>
+        <view wx:if="{{item.reminderEnabled}}" class="reminder-tag">已提醒</view>
+      </view>
+
+      <view class="event-date">
+        {{item.displayDate}}
+        <text wx:if="{{item.lunarText}}"> · {{item.lunarText}}</text>
+      </view>
+
+      <view class="event-countdown {{item.countdownClass}}">
+        还有 {{item.countdown}} 天
+      </view>
+    </view>
+  </view>
+</view>
