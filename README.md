@@ -94,21 +94,7 @@ events 集合
 
 # Reminder 流程
 
-用户开启提醒
-    ↓
-微信授权订阅消息
-    ↓
-保存 reminderEnabled
-    ↓
-腾讯云定时触发器（每天 08:00）
-    ↓
-自动调用 sendReminder 云函数
-    ↓
-查询今天到期事件
-    ↓
-检查是否已发送
-    ↓
-自动发送微信订阅消息
+![Uploading image.png…]()
 
 ---
 
